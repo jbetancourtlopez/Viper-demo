@@ -80,8 +80,8 @@ extension HomeViewController:  UITableViewDataSource, UITableViewDelegate {
         cell.descrip.text = item.description
                
         let url = URL(string: item.user.profile_image.small)
-        cell.photo!.kf.setImage(with: url, placeholder: UIImage(named: "logo_jb"))
-        //cell.photo.loadImage(urlString: item.user.profile_image.small)
+        //cell.photo!.kf.setImage(with: url, placeholder: UIImage(named: "logo_jb"))
+        cell.photo.loadImage(urlString: item.user.profile_image.small)
         return cell
     }
     
